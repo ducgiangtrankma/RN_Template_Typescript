@@ -1,0 +1,1 @@
+- init: react-native init MyApp --template react-native-template-typescrip
