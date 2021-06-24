@@ -1,1 +1,4 @@
-- init: react-native init MyApp --template react-native-template-typescrip
+- init: react-native init MyApp --template react-native-template-typescript
+- init: react-native-vector-icons
+- init: @types/react-native-vector-icons
+- init: react-native-device-info
