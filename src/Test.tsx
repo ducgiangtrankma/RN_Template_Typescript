@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/AntDesign';
+import {SvgIcon} from './components';
+import {sizes} from './utils/sizes';
 interface TestProps {
   value?: string;
 }
@@ -53,7 +54,7 @@ export const Test: FC<TestProps> = ({...props}) => {
   return (
     <SafeAreaView>
       <Text>{props.value}</Text>
-      <Icon name="upcircleo" size={24} />
+      <SvgIcon name="downcircleo" type="AntDesign" size={sizes._40sdp} />
       <FlatList<myData>
         data={data}
         extraData={data}

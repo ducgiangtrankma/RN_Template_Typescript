@@ -7,6 +7,9 @@ buildscript {
         compileSdkVersion = 29
         targetSdkVersion = 29
         ndkVersion = "20.1.5948944"
+        supportLibVersion = '1.0.2' 
+        mediaCompatVersion = '1.0.1' 
+        supportV4Version = '1.0.0' 
     }
     repositories {
         google()
