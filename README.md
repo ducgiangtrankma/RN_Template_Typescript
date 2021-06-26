@@ -2,3 +2,4 @@
 - init: react-native-vector-icons
 - init: @types/react-native-vector-icons
 - init: react-native-device-info
+- setup import patch : babel-plugin-module-resolver, edit file : tsconfig.json, add file babelrc end config

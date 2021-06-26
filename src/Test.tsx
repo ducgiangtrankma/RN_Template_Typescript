@@ -7,8 +7,8 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import {SvgIcon} from '@components/';
-import {sizes} from '@utils/';
+import {SvgIcon} from '@components';
+import {sizes} from '@utils';
 interface TestProps {
   value?: string;
 }
