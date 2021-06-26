@@ -1,12 +1,15 @@
 import * as React from 'react';
+import {Suspense} from 'react';
 import {FC} from 'react';
-import {SafeAreaView} from 'react-native';
-import {Test} from './src/Test';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {AppContainer} from '@navigation/AppNavigator';
 interface AppProps {}
 export const App: FC<AppProps> = ({}) => {
   return (
-    <SafeAreaView>
-      <Test value={'Create template'} />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <Suspense fallback={null}>
+        <AppContainer />
+      </Suspense>
+    </SafeAreaProvider>
   );
 };
