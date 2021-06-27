@@ -1,3 +1,4 @@
+import {delay} from '@common';
 import * as authReducer from '@reducer/authReducer';
 import {put} from 'redux-saga/effects';
 import {createSliceSaga, SagaType} from 'redux-toolkit-saga';
@@ -8,6 +9,7 @@ const slice = createSliceSaga({
     *signIn(action) {
       yield console.log('SignIn saga running', action);
       yield put(authReducer.signIn());
+      yield delay(2000);
       yield put(authReducer.signInSuccess('New token'));
     },
   },

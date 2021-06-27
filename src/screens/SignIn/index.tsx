@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import {useDispatch} from 'react-redux';
 import {signIn} from '@saga/authSaga';
-import {useSelector} from '@common/hook';
+import {useSelector} from '@common';
 interface SignInProps {}
 export const SignIn: FC<SignInProps> = ({}) => {
   const dispatch = useDispatch();
