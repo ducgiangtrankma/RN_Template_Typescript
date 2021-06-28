@@ -1,0 +1,12 @@
+{
+   "translation":{
+    "TabBar":{
+        "home":"Home",
+        "setting":"Setting"
+    },
+    "hello" :"Hello React Native Developer",
+    "language":"Language",
+    "btn-signIn":"SignIn",
+    "btn-settingLanguage":"Go to setting language"
+   }
+}

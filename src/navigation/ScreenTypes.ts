@@ -2,6 +2,7 @@ export enum APP_SCREEN {
   LOGIN = 'LOGIN',
   HOME = 'HOME',
   SETTING = 'SETTING',
+  DETAIL = 'DETAIL',
   AUTHENTICATION = 'AUTHENTICATION',
   MAIN_APP = 'MAIN_APP',
 }
@@ -10,6 +11,7 @@ export type UnAuthenticationPramsList = {
 };
 export type AuthenticationPramsList = {
   [APP_SCREEN.MAIN_APP]: undefined;
+  [APP_SCREEN.DETAIL]: undefined;
 };
 export type RootStackParamList = {
   [APP_SCREEN.AUTHENTICATION]: undefined;

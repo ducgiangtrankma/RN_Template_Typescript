@@ -14,8 +14,8 @@ import Zocial from 'react-native-vector-icons/Zocial';
 
 import React from 'react';
 import {StyleProp, TextStyle} from 'react-native';
-import {sizes} from '../utils/sizes';
-
+// import {sizes} from '../../utils/sizes/sizes';
+import {sizes} from '@utils';
 export type IconType =
   | 'Feather'
   | 'AntDesign'
@@ -45,7 +45,7 @@ export const SvgIcon: React.FunctionComponent<SvgIconProps> = props => {
       return (
         <Feather
           name={props.name}
-          size={props.size || sizes._20sdp}
+          size={props.size ?? sizes._20sdp}
           style={props.style}
         />
       );
