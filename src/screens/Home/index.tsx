@@ -1,12 +1,13 @@
 import {DefaultText, PageLoading, PageContainer} from '@components';
 import React, {FC} from 'react';
 import {StyleSheet} from 'react-native';
+import {fonts} from '../../themes/fontFamily';
 
 interface HomeProps {}
 export const Home: FC<HomeProps> = ({}) => {
   return (
     <PageContainer style={styles.container}>
-      <DefaultText i18nKey="TabBar.home" />
+      <DefaultText style={{fontFamily: fonts.bold}} i18nKey="TabBar.home" />
       <PageLoading />
     </PageContainer>
   );
