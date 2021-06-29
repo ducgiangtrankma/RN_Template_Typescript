@@ -9,7 +9,7 @@ import {APP_SCREEN} from './ScreenTypes';
 const Tab = createBottomTabNavigator();
 const MainScreen = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator tabBarOptions={{keyboardHidesTabBar: true}}>
       <Tab.Screen
         name={APP_SCREEN.HOME}
         component={Home}

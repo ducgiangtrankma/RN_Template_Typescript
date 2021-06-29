@@ -5570,6 +5570,11 @@ react-native-iphone-x-helper@^1.3.0:
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
 
+react-native-keyboard-manager@^6.5.4-1:
+  version "6.5.4-1"
+  resolved "https://registry.yarnpkg.com/react-native-keyboard-manager/-/react-native-keyboard-manager-6.5.4-1.tgz#1a48547a6d2c83843eb9848e4e99a520b2f79ee4"
+  integrity sha512-kaHsd6JiO8uy0dETq0NGzJu3OEcj3F20zG/+Cf//OHhwPQ1Zq/wxR4VBkYCc7jMSpKMdQ/lzTpRahxroXz7O/A==
+
 react-native-reanimated@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.2.0.tgz#a6412c56b4e591d1f00fac949f62d0c72c357c78"
