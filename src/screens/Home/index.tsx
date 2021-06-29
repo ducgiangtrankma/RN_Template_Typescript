@@ -1,13 +1,14 @@
-import {DefaultText} from '@components';
+import {DefaultText, PageLoading, PageContainer} from '@components';
 import React, {FC} from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 interface HomeProps {}
 export const Home: FC<HomeProps> = ({}) => {
   return (
-    <SafeAreaView style={styles.container}>
+    <PageContainer style={styles.container}>
       <DefaultText i18nKey="TabBar.home" />
-    </SafeAreaView>
+      <PageLoading />
+    </PageContainer>
   );
 };
 const styles = StyleSheet.create({

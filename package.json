@@ -18,6 +18,8 @@
     "@react-navigation/stack": "^5.14.5",
     "@reduxjs/toolkit": "^1.6.0",
     "i18next": "^20.3.2",
+    "lottie-ios": "3.1.8",
+    "lottie-react-native": "^4.0.2",
     "react": "17.0.1",
     "react-fast-compare": "^3.2.0",
     "react-i18next": "^11.11.0",
