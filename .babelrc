@@ -10,7 +10,8 @@
           "@saga":"./src/redux/saga",
           "@store":"./src/redux/store",
           "@common":"./src/common",
-          "@utils":"./src/utils"
+          "@utils":"./src/utils",
+          "@assets":"./src/assets"
         }
       }]
     ]

@@ -10,6 +10,7 @@ import {
 } from '@react-navigation/drawer';
 import {SvgIcon} from '@components';
 import {sizes, _screen_statusbar_height} from '@utils';
+import {images} from '@assets/images';
 
 interface NavigationProps {
   label: string;
@@ -29,10 +30,7 @@ export const DrawerContent: FunctionComponent<DrawerContentProps> = ({
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Image
-          style={styles.img}
-          source={require('../assets/images/avt.jpg')}
-        />
+        <Image style={styles.img} source={images.avt} />
       </View>
 
       <DrawerContentScrollView style={{marginTop: sizes._40sdp}}>
