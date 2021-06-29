@@ -1,6 +1,6 @@
 import React from 'react';
 import {Auth} from './Stack';
-import {MainScreen} from './Tab';
+import {DrawerNavigator} from './Drawer';
 import {createStackNavigator} from '@react-navigation/stack';
 import {APP_SCREEN, RootStackParamList} from './ScreenTypes';
 import {DetailSetting} from '../screens/Setting/Detail';
@@ -26,7 +26,7 @@ export const RootNavigation = ({token}: {token?: string}) => {
       ) : (
         <RootStack.Screen
           name={APP_SCREEN.MAIN_APP}
-          component={MainScreen}
+          component={DrawerNavigator} //Replace DrawerNavigator with MainScreen in ./Tab if you don't want to use drawer menu
           options={{gestureEnabled: false, headerShown: false}}
         />
       )}

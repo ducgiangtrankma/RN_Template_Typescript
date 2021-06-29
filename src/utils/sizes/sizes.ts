@@ -1,9 +1,9 @@
-import {Dimensions, Platform} from 'react-native';
+import {Dimensions, Platform, NativeModules} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
-
+const {StatusBarManager} = NativeModules;
 export const _screen_width = Dimensions.get('window').width;
 export const _screen_height = Dimensions.get('window').height;
-
+export const _screen_statusbar_height = StatusBarManager.HEIGHT;
 const width = _screen_width < _screen_height ? _screen_width : _screen_height;
 const isTablet = DeviceInfo.isTablet();
 export const _getSize = (value: number) => {

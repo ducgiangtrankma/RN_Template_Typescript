@@ -1,6 +1,7 @@
 import {DefaultText} from '@components';
 import React, {FC} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
+
 interface HomeProps {}
 export const Home: FC<HomeProps> = ({}) => {
   return (
