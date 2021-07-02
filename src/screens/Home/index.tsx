@@ -5,6 +5,7 @@ import {fonts} from '@src/themes';
 import {exampleApi} from '@src/api';
 interface HomeProps {}
 export const Home: FC<HomeProps> = ({}) => {
+  console.log('Render home');
   useEffect(() => {
     const getList = async () => {
       try {
