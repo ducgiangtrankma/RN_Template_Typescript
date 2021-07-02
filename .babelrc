@@ -11,7 +11,9 @@
           "@store":"./src/redux/store",
           "@common":"./src/common",
           "@utils":"./src/utils",
-          "@assets":"./src/assets"
+          "@assets":"./src/assets",
+          "@config":"./src/config",
+          "@src":"./src"
         }
       }]
     ]

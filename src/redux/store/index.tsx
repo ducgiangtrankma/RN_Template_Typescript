@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import rootSaga from '../saga/rootSaga';
 import authReducer from '../reducer/authReducer';
 import languageReducer from '../reducer/languageReducer';
+import appReducer from '../reducer/appReducer';
 const sagaMiddleware = createSagaMiddleware();
 const persistConfig = {
   key: 'root',
@@ -15,6 +16,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   auth: authReducer,
   language: languageReducer,
+  appReducer: appReducer,
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const store = configureStore({
