@@ -3,7 +3,6 @@ import * as authReducer from '@reducer/authReducer';
 import * as appReducer from '@reducer/appReducer';
 import {put} from 'redux-saga/effects';
 import {createSliceSaga, SagaType} from 'redux-toolkit-saga';
-import {ServiceSaga} from '../handleApi/saga';
 const slice = createSliceSaga({
   name: 'authSaga',
   sagaType: SagaType.TakeLatest,
@@ -13,7 +12,15 @@ const slice = createSliceSaga({
       yield put(authReducer.signIn());
       yield delay(2000);
       yield put(appReducer.onSetToken('NewToken'));
-      yield ServiceSaga.Post('categories', {
+    },
+  },
+});
+const authSaga = slice.saga;
+export default authSaga;
+export const {signIn} = slice.actions;
+/**
+ * Example
+ *    yield ServiceSaga.Post('categories', {
         name: 'Laptop',
       });
       //Customer request
@@ -29,9 +36,4 @@ const slice = createSliceSaga({
         'Saga call',
         yield ServiceSaga.Get('categories', {name: 'Computers'}),
       );
-    },
-  },
-});
-const authSaga = slice.saga;
-export default authSaga;
-export const {signIn} = slice.actions;
+ */

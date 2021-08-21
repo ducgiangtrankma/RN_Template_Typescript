@@ -5,13 +5,11 @@ import {
   ActivityIndicator,
   StyleSheet,
 } from 'react-native';
-import {useDispatch} from 'react-redux';
 import {signIn} from '@saga/authSaga';
-import {useSelector} from '@common';
+import {useSelector, dispatch} from '@common';
 import {DefaultText} from '@components';
 interface SignInProps {}
 export const SignIn: FC<SignInProps> = ({}) => {
-  const dispatch = useDispatch();
   const {loading} = useSelector(x => x.auth);
 
   return (

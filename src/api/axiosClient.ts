@@ -8,7 +8,7 @@ let refreshTokenRequest: Promise<string> | null = null;
 const axiosClient = axios.create({
   baseURL: appUrl,
   headers: {
-    'content-type': 'application/json',
+    'Content-type': 'application/json',
   },
   paramsSerializer: params => queryString.stringify(params),
 });
@@ -16,8 +16,10 @@ axiosClient.interceptors.request.use(async (config: AxiosRequestConfig) => {
   return config;
 });
 // refresh token
-async function refreshToken(originalRequest: any) {
-  return AxiosInstance.get(ApiConstants.REFRESH_TOKEN, originalRequest)
+async function refresh_Token() {
+  return AxiosInstance.post(`${appUrl}refreshToken`, {
+    refresh_token: ApiConstants.REFRESH_TOKEN,
+  })
     .then((res: AxiosResponse) => res.data.data)
     .catch(() => null);
 }
@@ -41,7 +43,7 @@ axiosClient.interceptors.response.use(
       originalRequest._retry = true;
       refreshTokenRequest = refreshTokenRequest
         ? refreshTokenRequest
-        : refreshToken(originalRequest);
+        : refresh_Token();
       const newToken = await refreshTokenRequest;
       refreshTokenRequest = null;
       if (newToken === null) {
@@ -50,6 +52,7 @@ axiosClient.interceptors.response.use(
       }
       dispatch(onSetToken(newToken));
       axios.defaults.headers.common.Authorization = 'Bearer ' + newToken;
+      originalRequest.headers.Authorization = 'Bearer ' + newToken;
       return AxiosInstance(originalRequest);
     }
     return Promise.reject(error);
