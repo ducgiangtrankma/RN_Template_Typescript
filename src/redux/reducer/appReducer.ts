@@ -5,10 +5,13 @@ export interface AppSate {
   token: string | undefined;
 
   loadingApp: boolean;
+
+  refreshToken: string | undefined;
 }
 const initialState: AppSate = {
   profile: {},
   token: undefined,
+  refreshToken: undefined,
   loadingApp: false,
 };
 const slice = createSlice({
@@ -16,7 +19,12 @@ const slice = createSlice({
   initialState: initialState,
   reducers: {
     onSetToken: (state, {payload}: PayloadAction<string>) => {
+      console.log('set token', payload);
       state.token = payload;
+    },
+    onSetRefreshToken: (state, {payload}: PayloadAction<string>) => {
+      console.log('set refresh token', payload);
+      state.refreshToken = payload;
     },
     onLoadApp: state => {
       state.loadingApp = true;
@@ -35,5 +43,11 @@ const slice = createSlice({
 });
 const appReducer = slice.reducer;
 export default appReducer;
-export const {onSetToken, onLoadApp, onLoadAppEnd, onSetAppProfile, onLogout} =
-  slice.actions;
+export const {
+  onSetToken,
+  onSetRefreshToken,
+  onLoadApp,
+  onLoadAppEnd,
+  onSetAppProfile,
+  onLogout,
+} = slice.actions;

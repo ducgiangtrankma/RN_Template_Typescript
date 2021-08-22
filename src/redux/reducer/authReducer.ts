@@ -18,8 +18,12 @@ const slice = createSlice({
       state.loading = false;
       state.token = payload;
     },
+    signOut: state => {
+      state.loading = false;
+      state.token = undefined;
+    },
   },
 });
 const authReducer = slice.reducer;
 export default authReducer;
-export const {signIn, signInSuccess} = slice.actions;
+export const {signIn, signInSuccess, signOut} = slice.actions;

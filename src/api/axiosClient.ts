@@ -3,6 +3,7 @@ import queryString from 'query-string';
 import {handleResponseAxios, dispatch} from '@common';
 import {ApiConstants, appUrl} from '@config/api';
 import {onLogout, onSetToken} from '@reducer/appReducer';
+import {signOut} from '@reducer/authReducer';
 const AxiosInstance = axios.create({});
 let refreshTokenRequest: Promise<string> | null = null;
 const axiosClient = axios.create({
@@ -45,13 +46,16 @@ axiosClient.interceptors.response.use(
         ? refreshTokenRequest
         : refresh_Token();
       const newToken = await refreshTokenRequest;
+      console.log('new token', newToken);
       refreshTokenRequest = null;
       if (newToken === null) {
+        console.log('Phiên đăng nhập đã hết hạn');
+        dispatch(signOut());
         dispatch(onLogout());
         return Promise.reject(error);
       }
       dispatch(onSetToken(newToken));
-      axios.defaults.headers.common.Authorization = 'Bearer ' + newToken;
+      // axios.defaults.headers.common.Authorization = 'Bearer ' + newToken;
       originalRequest.headers.Authorization = 'Bearer ' + newToken;
       return AxiosInstance(originalRequest);
     }

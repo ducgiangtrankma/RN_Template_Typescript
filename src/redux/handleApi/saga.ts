@@ -6,10 +6,11 @@ import {select} from 'redux-saga/effects';
 import Axios, {AxiosError, AxiosRequestConfig, AxiosResponse} from 'axios';
 import {RootState} from '@store';
 import {dispatch} from '@common';
-import {AppSate, onSetToken} from '@reducer/appReducer';
+import {AppSate, onLogout, onSetToken} from '@reducer/appReducer';
 import {ApiConstants, appUrl} from '@config/api';
 import {handleResponseAxios, handleErrorAxios, _onPushLogout} from '@common';
-const tokenKeyHeader = 'authorization';
+import {signOut} from '@reducer/authReducer';
+// const tokenKeyHeader = 'authorization';
 let refreshTokenRequest: Promise<string> | null = null;
 const AxiosInstance = Axios.create({});
 
@@ -30,10 +31,14 @@ AxiosInstance.interceptors.response.use(
       const newToken = await refreshTokenRequest;
       refreshTokenRequest = null;
       if (newToken === null) {
+        console.log('Phiên đăng nhập đã hết hạn');
+        dispatch(signOut());
+        dispatch(onLogout());
         return Promise.reject(error);
       }
       dispatch(onSetToken(newToken));
-      originalRequest.headers[tokenKeyHeader] = newToken;
+      originalRequest.headers.Authorization = 'Bearer ' + newToken;
+      // originalRequest.headers[tokenKeyHeader] = newToken;
       return AxiosInstance(originalRequest);
     }
     return Promise.reject(error);
@@ -58,7 +63,8 @@ function* Request<T = unknown>(
     timeout: TIME_OUT,
     headers: {
       'Content-Type': 'application/json',
-      [tokenKeyHeader]: token,
+      Authorization: 'Bearer ' + token,
+      // [tokenKeyHeader]: token,
     },
   };
   return yield AxiosInstance.request(
@@ -69,6 +75,7 @@ function* Request<T = unknown>(
       return result;
     })
     .catch((error: AxiosError) => {
+      console.log('catch', error);
       const result = handleErrorAxios(error);
       if (!isCheckOut) {
         return result;
@@ -86,6 +93,7 @@ function* Get<T>(
   url: string,
   param?: any,
 ): Generator<unknown, ResponseBase<T>, any> {
+  console.log('Debug', url);
   return yield Request<T>({url: url, params: param, method: 'GET'});
 }
 

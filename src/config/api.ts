@@ -9,4 +9,4 @@ export const ApiConstants = {
   LOGIN: '',
   REFRESH_TOKEN: '',
 };
-export const appUrl = 'http://localhost:3000/api/';
+export const appUrl = 'http://192.168.0.103:8080/'; // android not working localhost
