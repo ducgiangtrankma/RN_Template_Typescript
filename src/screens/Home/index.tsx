@@ -2,6 +2,7 @@ import {DefaultText, PageLoading, PageContainer} from '@components';
 import React, {FC} from 'react';
 import {StyleSheet} from 'react-native';
 import {fonts} from '@src/themes';
+
 interface HomeProps {}
 export const Home: FC<HomeProps> = ({}) => {
   return (

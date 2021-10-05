@@ -10,6 +10,12 @@ import {I18nextProvider} from 'react-i18next';
 import i18next from './src/utils/i18n/i18n';
 import KeyboardManager from 'react-native-keyboard-manager';
 import {isIos} from '@common';
+import {
+  GlobalLoading,
+  globalLoadingRef,
+  GlobalMessage,
+  globalMessageRef,
+} from '@components';
 if (isIos) {
   KeyboardManager.setEnable(true);
   KeyboardManager.setEnableDebugging(false);
@@ -40,6 +46,8 @@ export const App: FC<AppProps> = ({}) => {
           <I18nextProvider i18n={i18next}>
             <Suspense fallback={null}>
               <AppContainer />
+              <GlobalLoading ref={globalLoadingRef} />
+              <GlobalMessage ref={globalMessageRef} />
             </Suspense>
           </I18nextProvider>
         </PersistGate>
