@@ -2,9 +2,9 @@
 ### Quick start with TypeScript with version 0.64.1
 ### Preconfigured with
 * React navigation v5 [document](https://reactnavigation.org/docs/getting-started/)
-* Redux, reduxtoolkit [document](https://redux.js.org/introduction/getting-started)
+* Redux, redux-toolkit [document](https://redux.js.org/introduction/getting-started)
 * Redux saga [document](https://redux-saga.js.org/docs/introduction/GettingStarted)
-* Redux sagatoolkit [document](https://github.com/anymore1405/redux-toolkit-saga#readme)
+* Redux saga-toolkit [document](https://github.com/anymore1405/redux-toolkit-saga#readme)
 * Axios [document](https://www.npmjs.com/package/axios)
 * Device info [document](https://github.com/react-native-device-info/react-native-device-info)
 * Keyboard manager [document](https://www.npmjs.com/package/react-native-keyboard-manager)
@@ -14,13 +14,13 @@
 ### Features
 * Config bottom tab, stack, drawer with react-navigation 5
 * Custom drawer
-* Basic componet: Text, Global loading, GlobalMessage, SvgIcon...
+* Basic component: Text, Global loading, GlobalMessage, SvgIcon...
 * Redux and redux toolkit, redux saga
 * Config axios client and axios in saga, auto refresh token, auto handle response status
 * Custom hook get status internet
 * Custom hook clean redux with typescript
 * Multiple language with DefaultText component
-* Custome size scale
+* Custom size scale
 * Custom font
 ### Example
 * Clone project
@@ -36,7 +36,7 @@ yarn install
 cd ios
 pod install
 ```
-* Runing android app
+* Running android app
 ```
 yarn android
 ```
