@@ -1,12 +1,46 @@
-- init: react-native init MyApp --template react-native-template-typescript
-- init: react-native-vector-icons
-- init: @types/react-native-vector-icons
-- init: react-native-device-info
-- setup import patch : babel-plugin-module-resolver, edit file : tsconfig.json, add file babelrc end config
-- setup redux-saga: 
-    + init : reduxjs/toolkit
-    + init : react-redux
-    + init : redux-persist
-    + init : redux-saga
-    + init : redux-toolkit-saga
-    + init : react-native-async-storage/async-storage
+# Welcome to React native template:
+### Quick start with TypeScript with version 0.64.1
+### Preconfigured with
+* React navigation v5 [document](https://reactnavigation.org/docs/getting-started/)
+* Redux, reduxtoolkit [document](https://redux.js.org/introduction/getting-started)
+* Redux saga [document](https://redux-saga.js.org/docs/introduction/GettingStarted)
+* Redux sagatoolkit [document](https://github.com/anymore1405/redux-toolkit-saga#readme)
+* Axios [document](https://www.npmjs.com/package/axios)
+* Device info [document](https://github.com/react-native-device-info/react-native-device-info)
+* Keyboard manager [document](https://www.npmjs.com/package/react-native-keyboard-manager)
+* Vector icon [document](https://github.com/oblador/react-native-vector-icons)
+* Lottie [document](https://www.npmjs.com/package/lottie-react-native)
+* React-i18next [document](https://www.npmjs.com/package/react-i18next)
+### Features
+* Config bottom tab, stack, drawer with react-navigation 5
+* Custom drawer
+* Basic componet: Text, Global loading, GlobalMessage, SvgIcon...
+* Redux and redux toolkit, redux saga
+* Config axios client and axios in saga, auto refresh token, auto handle response status
+* Custom hook get status internet
+* Custom hook clean redux with typescript
+* Multiple language with DefaultText component
+* Custome size scale
+* Custom font
+### Example
+* Clone project
+```
+git clone https://github.com/ducgiangtrankma/RN_Template_Typescript.git
+```
+* Install 
+```
+yarn install
+```
+* Install pod
+```
+cd ios
+pod install
+```
+* Runing android app
+```
+yarn android
+```
+* Running ios app
+```
+yarn ios
+```
