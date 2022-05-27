@@ -18,7 +18,8 @@ export const Setting: FC<SettingProps> = ({}) => {
   };
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate(APP_SCREEN.DETAIL)}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate(APP_SCREEN.DETAIL, {item: 'a'})}>
         <DefaultText i18nKey="btn-settingLanguage" />
       </TouchableOpacity>
       <DefaultText i18nKey={'hello'} />

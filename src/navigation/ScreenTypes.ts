@@ -11,8 +11,11 @@ export type UnAuthenticationPramsList = {
 };
 export type AuthenticationPramsList = {
   [APP_SCREEN.MAIN_APP]: undefined;
-  [APP_SCREEN.DETAIL]: undefined;
+  [APP_SCREEN.DETAIL]: {
+    item: any;
+  };
 };
+
 export type RootStackParamList = {
   [APP_SCREEN.AUTHENTICATION]: undefined;
   [APP_SCREEN.MAIN_APP]: undefined;
