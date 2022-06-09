@@ -2,7 +2,8 @@
    "translation":{
     "TabBar":{
         "home":"Home",
-        "setting":"Setting"
+        "setting":"Setting",
+        "food":"Food"
     },
     "hello" :"Hello React Native Developer",
     "language":"Language",
