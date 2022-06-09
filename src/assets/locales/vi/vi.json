@@ -2,7 +2,8 @@
     "translation":{
      "TabBar":{
         "home":"Trang Chủ",
-        "setting":"Cài Đặt"
+        "setting":"Cài Đặt",
+        "food":"Đồ Ăn"
     },
     "hello" :"Xin chào các nhà phát triển React Native",
     "language":"Ngôn ngữ",

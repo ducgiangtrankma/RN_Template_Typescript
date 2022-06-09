@@ -1,7 +1,6 @@
-import {DefaultText, PageLoading, PageContainer, SvgIcon} from '@components';
-import React, {FC, useCallback, useEffect, useRef, useState} from 'react';
-import {Dimensions, Easing, StyleSheet, View, Animated} from 'react-native';
-import {fonts} from '@src/themes';
+import {PageContainer, SvgIcon} from '@components';
+import React, {FC, useEffect, useRef, useState} from 'react';
+import {Dimensions, Easing, StyleSheet, Animated} from 'react-native';
 import {sizes} from '@utils';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 const heightSC = Dimensions.get('screen').height;
