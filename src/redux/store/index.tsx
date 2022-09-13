@@ -6,7 +6,10 @@ import rootSaga from '../saga/rootSaga';
 import authReducer from '../reducer/authReducer';
 import languageReducer from '../reducer/languageReducer';
 import appReducer from '../reducer/appReducer';
+import {createLogger} from 'redux-logger';
 const sagaMiddleware = createSagaMiddleware();
+const middleware = [];
+middleware.push(createLogger());
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
@@ -21,7 +24,7 @@ const rootReducer = combineReducers({
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const store = configureStore({
   reducer: persistedReducer,
-  middleware: [sagaMiddleware],
+  middleware: [sagaMiddleware, ...middleware],
 });
 const persistor = persistStore(store);
 sagaMiddleware.run(rootSaga);

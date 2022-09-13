@@ -219,7 +219,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				7C15BE64776D84A1BA3E32F2 /* [CP] Embed Pods Frameworks */,
 				03E6CF4F00AA64C836A6D7B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -242,7 +241,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5D83D6F4CBA434564FEA21C4 /* [CP] Embed Pods Frameworks */,
 				5E909A613FD197C3AE1ED4C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -346,23 +344,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5D83D6F4CBA434564FEA21C4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS/Pods-RN_Boilerplate_TS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS/Pods-RN_Boilerplate_TS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS/Pods-RN_Boilerplate_TS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E909A613FD197C3AE1ED4C3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,23 +359,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS/Pods-RN_Boilerplate_TS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C15BE64776D84A1BA3E32F2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		834A34457EF9F9187FE5EA29 /* [CP] Check Pods Manifest.lock */ = {
