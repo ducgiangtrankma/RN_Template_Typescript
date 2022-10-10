@@ -33,15 +33,16 @@ export const RootNavigation = ({token}: {token?: string}) => {
       <RootStack.Screen
         name={APP_SCREEN.DETAIL}
         component={DetailSetting}
-        options={{
-          headerLeft: () => {
-            return (
-              <TouchableOpacity onPress={() => goBack()}>
-                <SvgIcon type="AntDesign" name="left" size={sizes._28sdp} />
-              </TouchableOpacity>
-            );
-          },
-        }}
+        options={{headerShown: false}}
+        // options={{
+        //   headerLeft: () => {
+        //     return (
+        //       <TouchableOpacity onPress={() => goBack()}>
+        //         <SvgIcon type="AntDesign" name="left" size={sizes._28sdp} />
+        //       </TouchableOpacity>
+        //     );
+        //   },
+        // }}
       />
     </RootStack.Navigator>
   );

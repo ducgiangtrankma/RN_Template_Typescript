@@ -5,6 +5,7 @@ import {changeLanguage} from '@reducer/languageReducer';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import {APP_SCREEN, AuthenticationPramsList} from '@navigation/ScreenTypes';
+import {StickyHeader} from '@components';
 
 interface DetailSettingProps {}
 export const DetailSetting: FC<DetailSettingProps> = ({}) => {
@@ -21,14 +22,15 @@ export const DetailSetting: FC<DetailSettingProps> = ({}) => {
     });
   }, [navigation, t]);
   return (
-    <SafeAreaView style={styles.container}>
-      <TouchableOpacity onPress={() => dispatch(changeLanguage('en'))}>
-        <Text>EN</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => dispatch(changeLanguage('vi'))}>
-        <Text>VI</Text>
-      </TouchableOpacity>
-    </SafeAreaView>
+    <StickyHeader />
+    // <SafeAreaView style={styles.container}>
+    //   <TouchableOpacity onPress={() => dispatch(changeLanguage('en'))}>
+    //     <Text>EN</Text>
+    //   </TouchableOpacity>
+    //   <TouchableOpacity onPress={() => dispatch(changeLanguage('vi'))}>
+    //     <Text>VI</Text>
+    //   </TouchableOpacity>
+    // </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({
