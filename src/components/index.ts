@@ -5,3 +5,4 @@ export * from './PageContainer';
 export * from './GlobalLoading';
 export * from './GlobalMessage/';
 export * from './StickyHeader';
+export * from './BottomSheet';

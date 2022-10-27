@@ -24,7 +24,8 @@ const rootReducer = combineReducers({
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 const store = configureStore({
   reducer: persistedReducer,
-  middleware: [sagaMiddleware, ...middleware],
+  // middleware: [sagaMiddleware, ...middleware],
+  middleware: [sagaMiddleware],
 });
 const persistor = persistStore(store);
 sagaMiddleware.run(rootSaga);
