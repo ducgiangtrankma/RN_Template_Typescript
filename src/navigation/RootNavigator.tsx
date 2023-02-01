@@ -1,14 +1,14 @@
 import React from 'react';
 import {Auth} from './Stack';
 import {DrawerNavigator} from './Drawer';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {APP_SCREEN, RootStackParamList} from './ScreenTypes';
 import {DetailSetting} from '../screens/Setting/Detail';
 import {SvgIcon} from '@components';
 import {sizes} from '@utils';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {goBack} from './NavigationServices';
-const RootStack = createStackNavigator<RootStackParamList>();
+const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 export const RootNavigation = ({token}: {token?: string}) => {
   return (

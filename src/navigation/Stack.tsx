@@ -1,8 +1,8 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {SignIn} from '@screens';
 import {APP_SCREEN} from './ScreenTypes';
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 const Auth = () => {
   return (
     <Stack.Navigator>
