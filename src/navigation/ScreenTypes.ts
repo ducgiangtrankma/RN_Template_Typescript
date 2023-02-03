@@ -1,23 +1,26 @@
 export enum APP_SCREEN {
+  HOME_TAB = 'HOME_TAB',
   LOGIN = 'LOGIN',
   HOME = 'HOME',
+  PLAY = 'PLAY',
+  CHANNEL = 'CHANNEL',
+  CHANNELS = 'CHANNELS',
   SETTING = 'SETTING',
-  DETAIL = 'DETAIL',
+  RESULT = 'RESULT',
+  REVIEW = 'REVIEW',
+  PROFILE = 'PROFILE',
   AUTHENTICATION = 'AUTHENTICATION',
   MAIN_APP = 'MAIN_APP',
 }
-export type UnAuthenticationPramsList = {
+export type UnAuthenticationParamsList = {
   [APP_SCREEN.LOGIN]: undefined;
 };
-export type AuthenticationPramsList = {
+export type AuthenticationParamsList = {
   [APP_SCREEN.MAIN_APP]: undefined;
-  [APP_SCREEN.DETAIL]: {
-    item: any;
-  };
 };
 
 export type RootStackParamList = {
   [APP_SCREEN.AUTHENTICATION]: undefined;
   [APP_SCREEN.MAIN_APP]: undefined;
-} & Partial<UnAuthenticationPramsList> &
-  Partial<AuthenticationPramsList>;
+} & Partial<UnAuthenticationParamsList> &
+  Partial<AuthenticationParamsList>;

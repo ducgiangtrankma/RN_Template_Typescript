@@ -25,8 +25,8 @@ import {
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {SegmentedButtons, useTheme} from 'react-native-paper';
-interface HomeScreenProps {}
-export const HomeScreen: FC<HomeScreenProps> = ({}) => {
+interface ChannelsScreenProps {}
+export const ChannelsScreen: FC<ChannelsScreenProps> = ({}) => {
   const [user, setUser] = useState<User | null>(null);
   const [tab, setTab] = useState('all');
   const theme = useTheme();
@@ -45,20 +45,7 @@ export const HomeScreen: FC<HomeScreenProps> = ({}) => {
         <View style={[styles.layer, {backgroundColor: theme.colors.primary}]} />
         {user && (
           <>
-            {/* <View
-              style={[
-                styles.avatarContainer,
-                {borderColor: theme.colors.primary},
-              ]}>
-              <Image
-                source={{uri: user.youtube_channel.avatar.url}}
-                style={styles.avatar}
-              />
-            </View> */}
-
-            <Text style={[styles.username, {color: '#fff'}]}>
-              {`Hi! ${user.youtube_channel.title}`}
-            </Text>
+            <Text style={[styles.username, {color: '#fff'}]}>{`Channels`}</Text>
           </>
         )}
       </View>
@@ -74,20 +61,15 @@ export const HomeScreen: FC<HomeScreenProps> = ({}) => {
               showSelectedCheck: true,
             },
             {
-              value: 'played',
-              label: 'Played',
-              showSelectedCheck: true,
-            },
-            {
-              value: 'like',
-              label: 'Like',
+              value: 'subcribe',
+              label: 'Subcribe',
               showSelectedCheck: true,
             },
           ]}
         />
         <InfiniteList
           style={styles.list}
-          type={MODEL_TYPE.GAME}
+          type={MODEL_TYPE.CHANNEL}
           itemStyle={styles.item}
         />
       </View>

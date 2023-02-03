@@ -11,11 +11,16 @@ import i18next from './src/utils/i18n/i18n';
 import KeyboardManager from 'react-native-keyboard-manager';
 import {isIos} from '@common';
 import {
+  Provider as PaperProvider,
+  MD3LightTheme as DefaultTheme,
+} from 'react-native-paper';
+import {
   GlobalLoading,
   globalLoadingRef,
   GlobalMessage,
   globalMessageRef,
 } from '@components';
+import {ThemeProp} from 'react-native-paper/lib/typescript/types';
 if (isIos) {
   KeyboardManager.setEnable(true);
   KeyboardManager.setEnableDebugging(false);
@@ -37,21 +42,35 @@ if (isIos) {
   //       // ...
   //   });
 }
+
+const theme = {
+  ...DefaultTheme,
+  // Specify custom property in nested object
+  colors: {
+    primary: 'rgb(21,47,170)',
+    secondary: 'rgb(50,77,230)',
+    tertiary: 'rgb(246,67,45)',
+    error: 'rgb(208,81,110)',
+  },
+};
+
 interface AppProps {}
 export const App: FC<AppProps> = ({}) => {
   return (
-    <SafeAreaProvider>
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <I18nextProvider i18n={i18next}>
-            <Suspense fallback={null}>
-              <AppContainer />
-              <GlobalLoading ref={globalLoadingRef} />
-              <GlobalMessage ref={globalMessageRef} />
-            </Suspense>
-          </I18nextProvider>
-        </PersistGate>
-      </Provider>
-    </SafeAreaProvider>
+    <PaperProvider theme={theme}>
+      <SafeAreaProvider>
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <I18nextProvider i18n={i18next}>
+              <Suspense fallback={null}>
+                <AppContainer />
+                <GlobalLoading ref={globalLoadingRef} />
+                <GlobalMessage ref={globalMessageRef} />
+              </Suspense>
+            </I18nextProvider>
+          </PersistGate>
+        </Provider>
+      </SafeAreaProvider>
+    </PaperProvider>
   );
 };

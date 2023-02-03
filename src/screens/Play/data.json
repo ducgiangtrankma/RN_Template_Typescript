@@ -1,0 +1,18 @@
+{
+  "start_time": 20,
+	"quiz_play_time": 10,
+	"quiz_end_time": 2,
+	"quizzes": [{
+		"answer": 3
+	},{
+		"answer": 0
+	},{
+		"answer": 2
+	},{
+		"answer": 1
+	},
+	{
+		"answer": 0
+	}
+]
+}

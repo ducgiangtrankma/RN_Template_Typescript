@@ -13,8 +13,8 @@ middleware.push(createLogger());
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['language'],
-  blacklist: ['auth'],
+  whitelist: ['language', 'appReducer'],
+  blacklist: [],
 };
 const rootReducer = combineReducers({
   auth: authReducer,

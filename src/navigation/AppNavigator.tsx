@@ -10,7 +10,6 @@ export const AppContainer = () => {
   const {i18n} = useTranslation();
   const {language} = useSelector(x => x.language);
   const isConnected = useNetWorkStatus();
-  console.log('Internet', isConnected);
   useEffect(() => {
     i18n.changeLanguage(language);
     // eslint-disable-next-line react-hooks/exhaustive-deps

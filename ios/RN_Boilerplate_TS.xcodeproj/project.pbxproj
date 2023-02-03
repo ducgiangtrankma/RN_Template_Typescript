@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RN_Boilerplate_TSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_Boilerplate_TSTests.m */; };
-		0E9918AC4DC2FF2D88D18B99 /* libPods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D115B8CEF5508F94D1B49C /* libPods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2CC95FE1268B8B8700A3AF4E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC95FE0268B8B8700A3AF4E /* File.swift */; };
 		57A4BAEE1A514FCFB047FFC4 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F5EB47BE74C4953998CB88A /* Roboto-Medium.ttf */; };
 		6927DB22DD9444B4BAD39B80 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05F86F5861664D709670EBD5 /* Roboto-Bold.ttf */; };
-		7F7716D12B75CFF054D0DC23 /* libPods-RN_Boilerplate_TS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F17DD877218FB3B221492E6 /* libPods-RN_Boilerplate_TS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		98F23E8A34E54429B0B2CD11 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C90350C2ED644C2F8724AD4D /* Roboto-Italic.ttf */; };
 		ABDE9D1DFCA94845B9D5789C /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 214F0AABDE9042108A2360EC /* Roboto-Light.ttf */; };
+		AC3AB56074E76F62C9A8B0D9 /* Pods_RN_Boilerplate_TS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C07D4DBBEE8DA194995917 /* Pods_RN_Boilerplate_TS.framework */; };
+		D04716C183B8F0FE8C994592 /* Pods_RN_Boilerplate_TSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA4BBA37C21F42AEB21384 /* Pods_RN_Boilerplate_TSTests.framework */; };
 		E8DDDFC9379B48E08762599B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33C3C806E5FF4B19ADE66992 /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +60,9 @@
 		5E436DC9A4264A56957B1665 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		69343B9FCAA147FEB7C0FB45 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		6F5EB47BE74C4953998CB88A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/font/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		7F17DD877218FB3B221492E6 /* libPods-RN_Boilerplate_TS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_Boilerplate_TS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813386C4351CAE738D8522C4 /* Pods-RN_Boilerplate_TSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Boilerplate_TSTests.debug.xcconfig"; path = "Target Support Files/Pods-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RN_Boilerplate_TS/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83DA4BBA37C21F42AEB21384 /* Pods_RN_Boilerplate_TSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RN_Boilerplate_TSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FCB2C7BE864C809AC42969 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		C90350C2ED644C2F8724AD4D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/font/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		CE05CF555BD54C5CAED32656 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
@@ -72,7 +73,8 @@
 		E49AD615BD7F4158826B7CD2 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED3C6A6C64FC40509223ECC2 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		F0D115B8CEF5508F94D1B49C /* libPods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C07D4DBBEE8DA194995917 /* Pods_RN_Boilerplate_TS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RN_Boilerplate_TS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57F2A2A7F49DA267753FBEA /* Pods-RN_Boilerplate_TSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Boilerplate_TSTests.release.xcconfig"; path = "Target Support Files/Pods-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E9918AC4DC2FF2D88D18B99 /* libPods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.a in Frameworks */,
+				D04716C183B8F0FE8C994592 /* Pods_RN_Boilerplate_TSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F7716D12B75CFF054D0DC23 /* libPods-RN_Boilerplate_TS.a in Frameworks */,
+				AC3AB56074E76F62C9A8B0D9 /* Pods_RN_Boilerplate_TS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7F17DD877218FB3B221492E6 /* libPods-RN_Boilerplate_TS.a */,
-				F0D115B8CEF5508F94D1B49C /* libPods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.a */,
+				F1C07D4DBBEE8DA194995917 /* Pods_RN_Boilerplate_TS.framework */,
+				83DA4BBA37C21F42AEB21384 /* Pods_RN_Boilerplate_TSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,6 +206,8 @@
 				DBB56F32CE9F320803207EBF /* Pods-RN_Boilerplate_TS.release.xcconfig */,
 				29E2FAF86CA3CD4769AA29CE /* Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.debug.xcconfig */,
 				D362172991510F9DE03BDB83 /* Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.release.xcconfig */,
+				813386C4351CAE738D8522C4 /* Pods-RN_Boilerplate_TSTests.debug.xcconfig */,
+				F57F2A2A7F49DA267753FBEA /* Pods-RN_Boilerplate_TSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -219,7 +223,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				03E6CF4F00AA64C836A6D7B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,23 +330,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		03E6CF4F00AA64C836A6D7B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E909A613FD197C3AE1ED4C3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,7 +384,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RN_Boilerplate_TSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,7 +444,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29E2FAF86CA3CD4769AA29CE /* Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.debug.xcconfig */;
+			baseConfigurationReference = 813386C4351CAE738D8522C4 /* Pods-RN_Boilerplate_TSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,7 +472,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D362172991510F9DE03BDB83 /* Pods-RN_Boilerplate_TS-RN_Boilerplate_TSTests.release.xcconfig */;
+			baseConfigurationReference = F57F2A2A7F49DA267753FBEA /* Pods-RN_Boilerplate_TSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +505,7 @@
 				DEVELOPMENT_TEAM = 3W4NX74N3J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RN_Boilerplate_TS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +533,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3W4NX74N3J;
 				INFOPLIST_FILE = RN_Boilerplate_TS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +584,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -618,12 +606,13 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -661,7 +650,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -676,11 +665,12 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

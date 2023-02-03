@@ -1,1 +1,2 @@
-export * from './features/exampleApi';
+export * from './features/game';
+export * from './features/channel';
