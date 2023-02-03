@@ -1,29 +1,11 @@
-import {images} from '@assets/images';
-import {DefaultText, PageLoading, PageContainer, SvgIcon} from '@components';
+import {PageContainer} from '@components';
 import {userAPI} from '@src/api/features/user';
 import InfiniteList from '@src/components/InfiniteList';
 import {User} from '@src/model';
 import {MODEL_TYPE} from '@src/model/faker';
-import {
-  sizes,
-  spacing,
-  _font_xl,
-  _font_xxl,
-  _screen_height,
-  _screen_width,
-} from '@utils';
-import React, {FC, useCallback, useEffect, useRef, useState} from 'react';
-import {
-  Dimensions,
-  Easing,
-  StyleSheet,
-  View,
-  Animated,
-  Text,
-  TouchableOpacity,
-  Image,
-} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import {sizes, spacing, _font_xl, _screen_height} from '@utils';
+import React, {FC, useEffect, useState} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 import {SegmentedButtons, useTheme} from 'react-native-paper';
 interface HomeScreenProps {}
 export const HomeScreen: FC<HomeScreenProps> = ({}) => {

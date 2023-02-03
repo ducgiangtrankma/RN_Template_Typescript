@@ -1,15 +1,13 @@
-import React, {useState, useCallback, useEffect, useRef, FC} from 'react';
+import React, {FC, useCallback, useEffect, useRef, useState} from 'react';
 import {
-  View,
-  Alert,
-  ScrollView,
-  Text,
-  Dimensions,
-  TouchableOpacity,
   Animated,
+  Dimensions,
   FlatList,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import YoutubePlayer, {getYoutubeMeta} from 'react-native-youtube-iframe';
+import YoutubePlayer from 'react-native-youtube-iframe';
 import data from './data.json';
 
 const GAME_STATE = {

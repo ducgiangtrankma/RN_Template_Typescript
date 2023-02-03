@@ -1,16 +1,16 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {FunctionComponent} from 'react';
-import {Text, TouchableOpacity, View, StyleSheet, Image} from 'react-native';
-import {DrawerActions} from '@react-navigation/native';
+import {images} from '@assets/images';
+import {SvgIcon} from '@components';
 import {
+  DrawerContentComponentProps,
+  DrawerContentOptions,
   DrawerContentScrollView,
   DrawerItem,
-  DrawerContentOptions,
-  DrawerContentComponentProps,
 } from '@react-navigation/drawer';
-import {SvgIcon} from '@components';
+import {DrawerActions} from '@react-navigation/native';
 import {sizes, _screen_statusbar_height} from '@utils';
-import {images} from '@assets/images';
+import React, {FunctionComponent} from 'react';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 interface NavigationProps {
   label: string;

@@ -1,26 +1,9 @@
-import {useTheme} from '@react-navigation/native';
 import {channelAPI, gameApi} from '@src/api';
-import axiosClient from '@src/api/axiosClient';
 import {Channel, Game} from '@src/model';
 import {MODEL_TYPE} from '@src/model/faker';
 import {Model} from '@src/model/model';
-import axios from 'axios';
-import React, {
-  FC,
-  forwardRef,
-  useCallback,
-  useEffect,
-  useImperativeHandle,
-  useRef,
-  useState,
-} from 'react';
-import {
-  ActivityIndicator,
-  FlatList,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import React, {FC, useEffect, useState} from 'react';
+import {FlatList, View} from 'react-native';
 import ChannelCard from '../ChannelCard';
 import GameCard from '../GameCard';
 

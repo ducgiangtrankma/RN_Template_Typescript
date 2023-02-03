@@ -1,25 +1,15 @@
 import {dispatch} from '@common';
-import {DefaultText, PageLoading, PageContainer, SvgIcon} from '@components';
+import {PageContainer, PageLoading} from '@components';
 import {APP_SCREEN} from '@navigation/ScreenTypes';
 import {useNavigation, useRoute} from '@react-navigation/native';
-import {channelAPI} from '@src/api';
+import {onLogout} from '@reducer/appReducer';
 import {userAPI} from '@src/api/features/user';
 import InfiniteList from '@src/components/InfiniteList';
 import {Channel, User} from '@src/model';
-import {onLogout} from '@reducer/appReducer';
 import {MODEL_TYPE} from '@src/model/faker';
-import {
-  sizes,
-  spacing,
-  _font_lg,
-  _font_md,
-  _font_sm,
-  _font_xl,
-  _screen_height,
-  _screen_width,
-} from '@utils';
-import React, {FC, useCallback, useEffect, useRef, useState} from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {sizes, spacing, _font_md, _font_xl, _screen_width} from '@utils';
+import React, {FC, useEffect, useState} from 'react';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {IconButton, useTheme} from 'react-native-paper';
 interface ProfileScreenProps {}
@@ -41,6 +31,10 @@ export const ProfileScreen: FC<ProfileScreenProps> = ({}) => {
 
   const logout = () => {
     dispatch(onLogout());
+  };
+
+  const goCMS = () => {
+    navigation.navigate(APP_SCREEN.CMS);
   };
   const {youtube_channel, played_games} = user || ({} as Channel);
 
@@ -64,8 +58,15 @@ export const ProfileScreen: FC<ProfileScreenProps> = ({}) => {
           onPress={logout}
           icon="logout"
           size={sizes(30)}
-          style={styles.logout}
+          style={styles.logoutBtn}
           iconColor={'#999'}
+        />
+        <IconButton
+          onPress={goCMS}
+          icon="database-edit"
+          size={sizes(30)}
+          style={styles.cmsBtn}
+          iconColor={theme.colors.tertiary}
         />
       </View>
       <LinearGradient
@@ -94,10 +95,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     paddingTop: spacing(5),
   },
-  logout: {
+  logoutBtn: {
     position: 'absolute',
     top: spacing(0),
     right: spacing(0),
+  },
+  cmsBtn: {
+    position: 'absolute',
+    top: spacing(0),
+    left: spacing(0),
   },
   header: {
     flexDirection: 'column',

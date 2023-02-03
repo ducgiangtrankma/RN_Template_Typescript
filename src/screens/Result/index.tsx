@@ -1,38 +1,21 @@
+import {images} from '@assets/images';
+import {APP_SCREEN} from '@navigation/ScreenTypes';
 import {useNavigation} from '@react-navigation/native';
 import {
   sizes,
   spacing,
-  _font_lg,
-  _font_md,
   _font_sm,
   _font_xl,
-  _font_xxl,
   _font_xxxl,
-  _screen_height,
   _screen_width,
 } from '@utils';
-import React, {useState, useCallback, useEffect, useRef, FC} from 'react';
 import Lottie from 'lottie-react-native';
-import {
-  View,
-  Alert,
-  ScrollView,
-  Text,
-  Dimensions,
-  TouchableOpacity,
-  Animated,
-  FlatList,
-  StyleSheet,
-  StatusBar,
-} from 'react-native';
+import React, {FC} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 import {Button, IconButton, useTheme} from 'react-native-paper';
-import YoutubePlayer, {getYoutubeMeta} from 'react-native-youtube-iframe';
-import Answer from './component/Answer';
-import {images} from '@assets/images';
-import {APP_SCREEN} from '@navigation/ScreenTypes';
 
 interface ResultScreenProps {}
-const ResultScreen: FC<ResultScreenProps> = () => {
+export const ResultScreen: FC<ResultScreenProps> = () => {
   const theme = useTheme();
   const navigation = useNavigation();
   const onQuit = () => {
@@ -146,4 +129,3 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 });
-export default ResultScreen;

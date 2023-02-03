@@ -5,14 +5,10 @@ import {Game} from './game';
 export enum MODEL_TYPE {
   GAME,
   CHANNEL,
+  YOUTUBE_CHANNEL,
   USER,
 }
-import {
-  YoutubeChannel,
-  YoutubeImage,
-  YoutubeThumbnails,
-  YoutubeVideo,
-} from './youtube';
+import {YoutubeChannel, YoutubeImage, YoutubeVideo} from './youtube';
 import {Channel} from './channel';
 import {User} from './user';
 
@@ -82,6 +78,9 @@ export const fake = (
       break;
     case MODEL_TYPE.USER:
       genFunc = fakeUser;
+      break;
+    case MODEL_TYPE.YOUTUBE_CHANNEL:
+      genFunc = fakeYoutubeChannel;
       break;
     default:
       genFunc = () => {

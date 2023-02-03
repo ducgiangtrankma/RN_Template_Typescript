@@ -8,25 +8,14 @@ import {
   _screen_height,
   _screen_width,
 } from '@utils';
-import React, {useState, useCallback, useEffect, useRef, FC} from 'react';
-import {
-  View,
-  Alert,
-  ScrollView,
-  Text,
-  Dimensions,
-  TouchableOpacity,
-  Animated,
-  FlatList,
-  StyleSheet,
-  StatusBar,
-} from 'react-native';
+import React, {FC} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 import {Button, useTheme} from 'react-native-paper';
-import YoutubePlayer, {getYoutubeMeta} from 'react-native-youtube-iframe';
+import YoutubePlayer from 'react-native-youtube-iframe';
 import Answer from './component/Answer';
 
 interface PlayScreenProps {}
-const PlayScreen: FC<PlayScreenProps> = () => {
+export const PlayScreen: FC<PlayScreenProps> = () => {
   const theme = useTheme();
   const navigation = useNavigation();
   const onQuit = () => {
@@ -166,4 +155,3 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-export default PlayScreen;

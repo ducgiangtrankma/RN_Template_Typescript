@@ -6,34 +6,20 @@ import {Game} from '@src/model';
 import {
   sizes,
   spacing,
-  _font_lg,
-  _font_md,
   _font_sm,
   _font_xl,
   _font_xxl,
   _screen_height,
   _screen_width,
 } from '@utils';
-import React, {useState, useCallback, useEffect, useRef, FC} from 'react';
-import {
-  View,
-  Alert,
-  ScrollView,
-  Text,
-  Dimensions,
-  TouchableOpacity,
-  Animated,
-  FlatList,
-  StyleSheet,
-  StatusBar,
-} from 'react-native';
+import React, {FC, useEffect, useState} from 'react';
+import {FlatList, StyleSheet, Text, View} from 'react-native';
 import {Button, IconButton, useTheme} from 'react-native-paper';
-import YoutubePlayer, {getYoutubeMeta} from 'react-native-youtube-iframe';
+import YoutubePlayer from 'react-native-youtube-iframe';
 import Quiz from './component/Quiz';
-import Answer from './component/Quiz';
 
 interface PlayScreenProps {}
-const ReviewScreen: FC<PlayScreenProps> = () => {
+export const ReviewScreen: FC<PlayScreenProps> = () => {
   const [quizIndex, setQuizIndex] = useState(0);
   const theme = useTheme();
   const navigation = useNavigation();
@@ -224,4 +210,3 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
 });
-export default ReviewScreen;

@@ -1,18 +1,17 @@
 import {APP_SCREEN} from '@navigation/ScreenTypes';
 import {useNavigation} from '@react-navigation/native';
 import {Channel} from '@src/model';
-import {sizes, spacing, _font_lg, _font_md, _font_xl} from '@utils';
+import {sizes, spacing, _font_lg, _font_md} from '@utils';
 import React, {FC} from 'react';
 import {
-  StyleSheet,
-  View,
-  Text,
-  ImageBackground,
-  TouchableOpacity,
   Image,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import {useTheme} from 'react-native-paper';
-import {PageLoading} from '../Loading';
 
 interface ChannelCardProps {
   channel: Channel;

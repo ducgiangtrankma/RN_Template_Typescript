@@ -1,5 +1,5 @@
 import {Model} from './model';
-import {YoutubeChannel, YoutubeVideo} from './youtube';
+import {YoutubeVideo} from './youtube';
 interface Quiz {
   answer: number;
 }

@@ -1,8 +1,7 @@
-import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SignIn} from '@screens';
-import {APP_SCREEN} from './ScreenTypes';
 import {LoginScreen} from '@src/screens/Login';
+import React from 'react';
+import {APP_SCREEN} from './ScreenTypes';
 const Stack = createNativeStackNavigator();
 const AuthNavigator = () => {
   return (

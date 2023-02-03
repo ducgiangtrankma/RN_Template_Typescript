@@ -1,29 +1,11 @@
-import React, {FC, useCallback, useEffect, useRef, useState} from 'react';
-import {
-  Dimensions,
-  Easing,
-  StyleSheet,
-  View,
-  Animated,
-  TouchableOpacity,
-  Text,
-  Image,
-} from 'react-native';
-import {
-  sizes,
-  spacing,
-  _font_lg,
-  _font_md,
-  _font_xl,
-  _font_xxl,
-  _getSize,
-  _screen_width,
-} from '@utils';
-import {PageContainer} from '@components';
-import {Button} from 'react-native-paper';
 import {images} from '@assets/images';
-import {useDispatch} from 'react-redux';
+import {PageContainer} from '@components';
 import {onSetToken} from '@reducer/appReducer';
+import {sizes, spacing, _font_md, _font_xxl, _screen_width} from '@utils';
+import React, {FC} from 'react';
+import {Image, StyleSheet, Text, View} from 'react-native';
+import {Button} from 'react-native-paper';
+import {useDispatch} from 'react-redux';
 interface LoginScreenProps {}
 export const LoginScreen: FC<LoginScreenProps> = ({}) => {
   const dispatch = useDispatch();

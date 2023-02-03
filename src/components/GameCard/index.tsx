@@ -1,14 +1,14 @@
 import {APP_SCREEN} from '@navigation/ScreenTypes';
 import {useNavigation} from '@react-navigation/native';
 import {Game} from '@src/model';
-import {spacing, _font_lg, _font_md, _font_xl} from '@utils';
+import {spacing, _font_lg, _font_md} from '@utils';
 import React, {FC} from 'react';
 import {
-  StyleSheet,
-  View,
-  Text,
   ImageBackground,
+  StyleSheet,
+  Text,
   TouchableOpacity,
+  View,
 } from 'react-native';
 import {useTheme} from 'react-native-paper';
 

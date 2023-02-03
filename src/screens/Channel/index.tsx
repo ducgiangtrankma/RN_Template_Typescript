@@ -1,23 +1,14 @@
-import {DefaultText, PageLoading, PageContainer, SvgIcon} from '@components';
+import {PageContainer, PageLoading} from '@components';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import {channelAPI} from '@src/api';
 import InfiniteList from '@src/components/InfiniteList';
 import {Channel} from '@src/model';
 import {MODEL_TYPE} from '@src/model/faker';
-import {
-  sizes,
-  spacing,
-  _font_lg,
-  _font_md,
-  _font_sm,
-  _font_xl,
-  _screen_height,
-  _screen_width,
-} from '@utils';
-import React, {FC, useCallback, useEffect, useRef, useState} from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {sizes, spacing, _font_md, _font_xl, _screen_width} from '@utils';
+import React, {FC, useEffect, useState} from 'react';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {Button, IconButton, useTheme} from 'react-native-paper';
+import {Button, useTheme} from 'react-native-paper';
 interface ChannelScreenProps {}
 export const ChannelScreen: FC<ChannelScreenProps> = ({}) => {
   const route = useRoute();
